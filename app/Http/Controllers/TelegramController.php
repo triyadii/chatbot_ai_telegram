@@ -20,7 +20,7 @@ class TelegramController extends Controller
 
         // Tangani perintah khusus
         if ($text === '/start') {
-            $this->reply($chatId, 'Halo! Aku asisten AI-mu. Ketik apa saja untuk mulai mengobrol. Ketik /reset untuk menghapus riwayat percakapan.');
+            $this->reply($chatId, 'Halo! Aku AI asisten Kamu. Silahkan perkenalkan nama kamu terlebih dahulu. apabila kamu mau menghapus riwayat percakapan kita, cukup Ketik /reset untuk menghapus riwayat percakapan ya');
             return response()->json(['ok' => true]);
         }
 
